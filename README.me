@@ -1,0 +1,104 @@
+# 🎧 WebRadio Project
+
+Bem-vindo ao **WebRadio Project**! Este projeto foi desenvolvido com o objetivo de criar uma plataforma de rádio online, onde os usuários podem ouvir transmissões de áudio ao vivo e interagir com o conteúdo de maneira simples e intuitiva.
+
+## 📜 Sumário
+
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalacao)
+- [Como Usar](#como-usar)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Contribuições](#contribuicoes)
+- [Licença](#licenca)
+
+## 🛠 Funcionalidades
+
+- Streaming de áudio ao vivo.
+- Contador de usuários online.
+- Registro de visitas e controle de sessão.
+- Interface amigável com navegação por múltiplas páginas.
+- Configuração flexível para uso local e remoto.
+
+## 🚀 Tecnologias Utilizadas
+
+- **PHP**: Lógica de back-end e controle de sessões.
+- **HTML/CSS**: Estrutura e estilo da interface do usuário.
+- **JavaScript**: Manipulação de DOM e interatividade.
+- **MySQL**: Banco de dados para gerenciamento de sessões e visitas.
+- **Nginx/Apache**: Servidores web para distribuição de conteúdo e streaming.
+- **Docker**: Ambiente de desenvolvimento e produção isolado.
+
+## 💻 Instalação
+
+### Pré-requisitos
+
+- PHP 7.4 ou superior.
+- MySQL 5.7 ou superior.
+- Servidor web Apache ou Nginx.
+- Docker (opcional, para ambiente de desenvolvimento).
+- Git (para clonar o repositório).
+
+### Passos para Instalação
+
+1. Clone o repositório para sua máquina local:
+   ```bash
+   git clone https://github.com/seu-usuario/WebRadioProject.git
+   cd WebRadioProject
+   ```
+
+2. Configure seu ambiente local:
+   - Copie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente conforme necessário.
+
+3. Instale as dependências e configure o banco de dados:
+   ```bash
+   composer install
+   php artisan migrate
+   ```
+
+4. Inicie o servidor local:
+   ```bash
+   php -S localhost:8000
+   ```
+
+5. Acesse o projeto em `http://localhost:8000`.
+
+## 📖 Como Usar
+
+1. Acesse a página inicial do site e navegue pelo menu para explorar as diferentes páginas.
+2. No navegador, você pode ouvir a transmissão de áudio ao vivo.
+3. Monitore o número de usuários online e o total de visitas diretamente na interface.
+
+## 📂 Estrutura do Projeto
+
+```plaintext
+/WebRadioProject
+│
+├── app/                    # Contém o código principal da aplicação
+│   ├── Controllers/        # Controladores do projeto
+│   └── Models/             # Modelos do projeto
+│
+├── config/                 # Configurações da aplicação
+│
+├── public/                 # Arquivos acessíveis publicamente (CSS, JS, etc.)
+│
+├── resources/              # Recursos como views e templates
+│   ├── views/              # Arquivos de view (HTML, Blade, etc.)
+│   └── assets/             # Imagens e arquivos estáticos
+│
+├── routes/                 # Definições de rotas
+│
+└── .env                    # Arquivo de configuração de ambiente
+```
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um pull request ou uma issue para sugerir melhorias ou corrigir problemas.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
+
+---
+
+Desenvolvido com ❤️ por [Seu Nome](https://github.com/seu-usuario)
