@@ -4,13 +4,13 @@ Bem-vindo ao **WebRadio Project**! Este projeto foi desenvolvido com o objetivo 
 
 ## 📜 Sumário
 
-- [Funcionalidades](#funcionalidades)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Instalação](#instalacao)
-- [Como Usar](#como-usar)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Contribuições](#contribuicoes)
-- [Licença](#licenca)
+- [Funcionalidades](#-funcionalidades)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Instalação](#-instalação)
+- [Como Usar](#-como-usar)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Contribuições](#-contribuições)
+- [Licença](#-licença)
 
 ## 🛠 Funcionalidades
 
@@ -43,8 +43,8 @@ Bem-vindo ao **WebRadio Project**! Este projeto foi desenvolvido com o objetivo 
 
 1. Clone o repositório para sua máquina local:
    ```bash
-   git clone https://github.com/seu-usuario/WebRadioProject.git
-   cd WebRadioProject
+   git clone https://github.com/rgcavalheiro/webradio.git
+   cd webradio
    ```
 
 2. Configure seu ambiente local:
@@ -74,21 +74,26 @@ Bem-vindo ao **WebRadio Project**! Este projeto foi desenvolvido com o objetivo 
 ```plaintext
 /WebRadioProject
 │
-├── app/                    # Contém o código principal da aplicação
-│   ├── Controllers/        # Controladores do projeto
-│   └── Models/             # Modelos do projeto
+├── controllers/            # Controladores do projeto
+│   ├── UserController.php   # Controlador principal para usuários
 │
-├── config/                 # Configurações da aplicação
+├── models/                 # Modelos do projeto
+│   ├── UserModel.php        # Modelo principal para interações com o banco de dados
+│
+├── views/                  # Arquivos de visualização
+│   ├── index.php           # Página principal
+│   ├── estatisticas.php    # Página de estatísticas de usuários online e visitas
+│
+├── config/                 # Configurações do sistema
+│   ├── config.php          # Arquivo de configuração principal
 │
 ├── public/                 # Arquivos acessíveis publicamente (CSS, JS, etc.)
+│   ├── css/                # Estilos CSS
+│   ├── js/                 # Scripts JavaScript
 │
-├── resources/              # Recursos como views e templates
-│   ├── views/              # Arquivos de view (HTML, Blade, etc.)
-│   └── assets/             # Imagens e arquivos estáticos
-│
-├── routes/                 # Definições de rotas
-│
-└── .env                    # Arquivo de configuração de ambiente
+├── .env.example            # Exemplo de arquivo de configuração de ambiente
+├── README.md               # Documentação do projeto
+└── index.php               # Arquivo inicial para execução do projeto
 ```
 
 ## 🤝 Contribuições
@@ -101,4 +106,4 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE par
 
 ---
 
-Desenvolvido com ❤️ por [Seu Nome](https://github.com/seu-usuario)
+Desenvolvido com ❤️ por [Rafael Cavalheiro](https://github.com/rgcavalheiro)
