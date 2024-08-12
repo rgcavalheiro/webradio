@@ -1,0 +1,5 @@
+# Ignorar arquivos de configuração de ambiente
+.env
+
+# Ignorar a pasta de configuração
+config/
